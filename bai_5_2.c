@@ -1,33 +1,42 @@
 //
 #include<stdio.h>
-// làm thiếu yêu cầu đề bài, đề bài yêu cầu nhập số vào chứ không phải khai báo số sẵn,
+
 int main ()
 {
-int a = 5 , b=15 ,c= 16 , d = 7, max =a ;// format lại code, space bua bai qua
-max = a ; // dòng này có ý nghĩa gì?
+int firstNum, secondNum, thirdNum, fouthNum;
+printf("Nhap so nguyen thu nhat:");
+scanf("%d", &firstNum);
+printf("Nhap so nguyen thu hai:");
+scanf("%d", &secondNum);
+printf("Nhap so nguyen thu ba:");
+scanf("%d", &thirdNum);
+printf("Nhap so nguyen thu tu:");
+scanf("%d", &fouthNum);
 
-if (b>max){
-	max = b ;
-}
+int max = firstNum;
+if(firstNum == secondNum && secondNum == thirdNum &&  thirdNum == fouthNum){
+	printf("Khong co so lon nhat!");
+	exit(0);
+	}
+if(secondNum>max){
+	max = secondNum;
+	}	
 else{
 	max = max;
-}
-if (c>max){
-	max = c;
-}
-
-else {
+	}
+if(thirdNum>max){
+	max = thirdNum;
+	}
+else{
 	max = max;
-}
-if(d>max){
-max = d;
-printf("max =%d", max);
-}
+	}
+if(fouthNum>max){
+	max = fouthNum;
+	printf("max =%d", max);
+	}
 else{
 	max = max;
 	printf ("max = %d", max);
-}
+	}
 return 0;
 }
-// truong hop 4 so bang nhau thi sao ?
-
