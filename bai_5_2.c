@@ -14,25 +14,17 @@ printf("Nhap so nguyen thu tu:");
 scanf("%d", &fouthNum);
 
 int max = firstNum;
-if(firstNum == secondNum && secondNum == thirdNum &&  thirdNum == fouthNum){
-	printf("Khong co so lon nhat!");
-	exit(0);
-	}
 if(secondNum>max){
 	max = secondNum;
 	}	
-else{
-	max = max;
-	}
 if(thirdNum>max){
 	max = thirdNum;
 	}
-else{
-	max = max;
-	}
 if(fouthNum>max){
 	max = fouthNum;
-	printf("max =%d", max);
+	}
+if(firstNum == secondNum && Max == thirdNum && Max == fouthNum){
+	printf("Khong co so lon nhat!");
 	}
 else{
 	max = max;
